@@ -1,0 +1,123 @@
+KETER DO X
+Inicio del proyecto con Codex
+
+Este paquete contiene la guía del loop y las referencias del proyecto.
+El archivo .md es una guía de texto: Codex la lee cuando se lo pides.
+El desarrollo comienza enviando el mensaje de PROMPT_INICIAL.txt.
+
+1. PREPARA LA CARPETA
+
+Extrae todo el ZIP en una carpeta llamada Keter_Do_X.
+En Windows puedes usar clic derecho sobre el ZIP y “Extraer todo”.
+Abre la carpeta extraída: dentro debe estar Loop_Desarrollo_Web_Keter_Do_X.md.
+Conserva la carpeta referencias junto a ese archivo.
+
+2. ABRE CODEX
+
+Esta guía utiliza Codex desde la aplicación de escritorio.
+Consulta la guía oficial e instala la aplicación indicada para tu equipo:
+https://learn.chatgpt.com/docs/quickstart
+
+Inicia sesión con tu cuenta de ChatGPT y elige Codex en el selector de producto.
+Si ya tienes esa aplicación preparada, continúa con el siguiente paso.
+
+3. CONECTA LA CARPETA
+
+Crea un proyecto local y vincula la carpeta Keter_Do_X extraída.
+Para vincular una carpeta a un proyecto existente, abre el menú del proyecto,
+elige Edit project y después Add folder. Selecciona Keter_Do_X.
+Inicia un chat dentro de ese proyecto.
+
+La documentación oficial de proyectos está aquí:
+https://learn.chatgpt.com/docs/projects?surface=app
+
+4. ENVÍA EL PRIMER MENSAJE
+
+Abre PROMPT_INICIAL.txt con un editor de texto, copia todo el contenido,
+pégalo en el chat de Codex y envíalo. Si Codex indica que no ve los archivos,
+revisa la carpeta conectada antes de avanzar.
+
+Este primer mensaje solicita la fase 0. El resultado esperado es un inventario
+y un archivo ESTADO_PROYECTO.md. La página todavía se creará en la fase 1.
+
+5. CREA LA ESTRUCTURA HTML
+
+Cuando la fase 0 esté revisada, envía:
+
+Continúa con la fase 1 de Loop_Desarrollo_Web_Keter_Do_X.md.
+Crea index.html directamente en esta carpeta con contenido respaldado,
+estructura semántica y enlaces internos válidos. Mantén el CSS y JavaScript
+para sus fases posteriores. Actualiza ESTADO_PROYECTO.md y explícame
+cómo abrir el HTML en el navegador.
+
+Abre index.html desde la carpeta con tu navegador.
+Esta primera versión tendrá la apariencia sencilla del HTML sin estilos.
+Revisa los textos, el orden de las secciones y los enlaces internos.
+
+6. APLICA EL DISEÑO
+
+Después de revisar la estructura, envía:
+
+Continúa con la fase 2 de la guía. Crea y enlaza assets/css/styles.css.
+Usa el logo, la paleta y la estructura revisada. Comprueba el diseño en móvil
+y escritorio, los desbordamientos, el contraste y la navegación por teclado.
+Actualiza ESTADO_PROYECTO.md y distingue pruebas ejecutadas de pendientes.
+
+7. AÑADE LAS INTERACCIONES
+
+Después de revisar el diseño, envía:
+
+Continúa con la fase 3 de la guía. Implementa únicamente las interacciones
+necesarias en assets/js/main.js y enlázalo con defer. Prueba el menú,
+los filtros y sus estados, cuando existan. Mantén el contenido principal
+accesible sin JavaScript y actualiza ESTADO_PROYECTO.md.
+
+Si el proyecto utiliza fetch para leer JSON, pide a Codex una vista previa
+mediante HTTP local y la URL exacta para abrirla. También debe explicar
+cómo volver a iniciarla y cómo detenerla.
+
+8. REVISA Y PREPARA LA PUBLICACIÓN
+
+Tras validar las interacciones, envía:
+
+Continúa con la fase 4 de la guía. Revisa accesibilidad, SEO, claridad de
+respuestas, coherencia de datos y rendimiento. Corrige los defectos dentro
+del alcance y entrega las pruebas realizadas y los pendientes.
+
+La fase 5 trata las versiones y la publicación. Cuando llegues a ella:
+
+Prepara la fase 5. Identifica los archivos finales y las opciones de alojamiento
+compatibles. Indica la información necesaria para publicar y conserva una
+versión recuperable. El despliegue debe comprobarse en su URL real.
+
+PHP y MySQL se tratan en la fase opcional 6 si existe una necesidad de servidor
+o almacenamiento. Al añadir un backend habrá que repetir las pruebas que afecte.
+
+9. SI ALGO FALLA
+
+Indica la fase, el navegador, el tamaño de pantalla, los pasos para reproducir,
+qué esperabas, qué ocurrió y el error exacto. Puedes adjuntar una captura.
+
+Mensaje de ejemplo:
+
+Estamos en la fase 2. En una pantalla de 375 píxeles aparece desplazamiento
+horizontal y el botón de contacto sale del contenedor. Ajusta el CSS necesario,
+mantén los textos y comprueba otra vez móvil y escritorio. Actualiza el registro.
+
+Conserva el mismo chat durante esta primera versión.
+Al volver otro día, abre el proyecto, retoma ese chat y pide que lea
+ESTADO_PROYECTO.md antes de continuar.
+
+ARCHIVOS INCLUIDOS
+
+Loop_Desarrollo_Web_Keter_Do_X.md: guía completa y prompts por fase.
+PROMPT_INICIAL.txt: primer mensaje listo para copiar.
+referencias/Propuesta_Canvas.docx: propuesta original aportada.
+referencias/Propuesta_Canvas_texto.txt: extracción del texto para facilitar su lectura.
+referencias/Logo_y_paleta.png: lámina de marca aportada.
+referencias/Transcripcion_video.txt: transcripción aportada.
+
+La propuesta incluye ideas que todavía deben confirmarse. La lámina de marca
+no sustituye un archivo limpio del logo en alta resolución para la publicación.
+El registro de fase 0 identificará los recursos pendientes.
+
