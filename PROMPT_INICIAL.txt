@@ -1,0 +1,18 @@
+Vamos a iniciar la web de Keter Do X. Soy principiante: explícame cada paso con palabras sencillas.
+
+Trabaja en esta carpeta y lee:
+1. Loop_Desarrollo_Web_Keter_Do_X.md.
+2. referencias/Propuesta_Canvas_texto.txt.
+3. referencias/Logo_y_paleta.png.
+4. referencias/Transcripcion_video.txt, en los tramos pertinentes.
+
+El Word original también está en referencias/Propuesta_Canvas.docx.
+
+Aplica el Prompt maestro de la guía y ejecuta únicamente la fase 0: inventario de contenido y recursos, estructura propuesta, datos pendientes y criterios de aceptación.
+
+Primera versión: HTML5, CSS y JavaScript vainilla. Conserva el logo y la paleta. Distingue lo confirmado de las sugerencias de la propuesta y de lo pendiente. No inventes historias ni datos comerciales.
+
+Crea ESTADO_PROYECTO.md con lo revisado, las decisiones, las fuentes, lo que falta y el siguiente paso. Aún no crees el HTML, CSS ni JavaScript.
+
+Los datos que falten pueden registrarse como pendientes mientras avanzas con el contenido respaldado. Al terminar, dime qué revisaste y qué mensaje debo enviar para comenzar la fase 1.
+
