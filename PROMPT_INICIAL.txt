@@ -1,18 +1,16 @@
-Vamos a iniciar la web de Keter Do X. Soy principiante: explícame cada paso con palabras sencillas.
+Vamos a trabajar en la web de Keter Do X. Soy principiante: explícame los pasos con palabras sencillas.
 
-Trabaja en esta carpeta y lee:
+Lee los archivos que sí están en este repositorio:
 1. Loop_Desarrollo_Web_Keter_Do_X.md.
-2. referencias/Propuesta_Canvas_texto.txt.
-3. referencias/Logo_y_paleta.png.
-4. referencias/Transcripcion_video.txt, en los tramos pertinentes.
+2. ESTADO_PROYECTO.md, si existe, para recuperar el avance.
+3. WhatsApp Image 2026-10-27 at 9.00.40 AM.jpeg, la lámina de marca.
 
-El Word original también está en referencias/Propuesta_Canvas.docx.
+Aplica el Prompt maestro de la guía. Si el registro indica que una fase ya está completada, conserva ese avance y sigue la fase que solicite en mi mensaje; evita reiniciar el proyecto.
 
-Aplica el Prompt maestro de la guía y ejecuta únicamente la fase 0: inventario de contenido y recursos, estructura propuesta, datos pendientes y criterios de aceptación.
+Si no existe un estado inicial, ejecuta únicamente la fase 0: inventario, fuentes, estructura, datos pendientes y criterios de aceptación. Crea ESTADO_PROYECTO.md y registra con honestidad qué recursos están disponibles y qué pruebas se hicieron.
 
-Primera versión: HTML5, CSS y JavaScript vainilla. Conserva el logo y la paleta. Distingue lo confirmado de las sugerencias de la propuesta y de lo pendiente. No inventes historias ni datos comerciales.
+La propuesta Word y la transcripción se analizaron durante la preparación. No presupongas que sus copias están en una carpeta referencias: comprueba las rutas disponibles y usa el resumen documentado en ESTADO_PROYECTO.md. Registra cualquier fuente adicional que consultes.
 
-Crea ESTADO_PROYECTO.md con lo revisado, las decisiones, las fuentes, lo que falta y el siguiente paso. Aún no crees el HTML, CSS ni JavaScript.
+Primera versión: HTML5, CSS y JavaScript vainilla, cada capa en su fase. Conserva el logo y la paleta. Distingue datos confirmados, información publicada, propuestas y pendientes. No inventes historias ni condiciones comerciales.
 
-Los datos que falten pueden registrarse como pendientes mientras avanzas con el contenido respaldado. Al terminar, dime qué revisaste y qué mensaje debo enviar para comenzar la fase 1.
-
+En la fase 0 prepara solo la documentación. Los datos que falten pueden permanecer pendientes mientras se avanza con el contenido respaldado. Al terminar, explica el resultado y cuál es el siguiente paso.
