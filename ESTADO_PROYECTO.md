@@ -1,16 +1,16 @@
 # Estado del proyecto Keter Do X
 
-Fecha de revisión: 11 de noviembre de 2026, America/Caracas.
-Versión del registro: 0.2.
+Fecha de revisión: 12 de noviembre de 2026, UTC.
+Versión del registro: 0.3.
 Guía aplicada: Loop_Desarrollo_Web_Keter_Do_X.md, versión 1.1.
-Estado: fase 1 implementada y validada estáticamente; revisión visual y por teclado pendiente.
-Siguiente paso: comprobar la estructura en navegador antes de cerrar la fase 1 e iniciar la fase 2.
+Estado: fase 2 implementada y validada estáticamente; revisión visual, de ampliación y por teclado pendiente.
+Siguiente paso: abrir la página con sus estilos y comprobar el diseño en móvil y escritorio para cerrar la fase 2.
 
 ## Objetivo y alcance
 
 Preparar una página principal que explique la oferta de la marca, ayude a encontrar un programa y permita solicitar información. La primera versión se construirá por capas: HTML5, CSS y JavaScript vainilla. PHP y MySQL quedan reservados para necesidades reales de servidor o almacenamiento.
 
-La fase 0 entregó inventario, fuentes, arquitectura, decisiones visuales, pendientes y criterios de aceptación. La fase 1 incorpora index.html con estructura semántica y el recurso de marca existente. Las verificaciones realizadas y sus límites se detallan al final; el diseño CSS y la lógica JavaScript continúan en sus fases correspondientes.
+La fase 0 entregó inventario, fuentes, arquitectura, decisiones visuales, pendientes y criterios de aceptación. La fase 1 incorporó index.html con estructura semántica y el recurso de marca existente. La fase 2 añade assets/css/styles.css y su enlace desde el HTML. La lógica JavaScript corresponde a la fase 3. Las verificaciones realizadas y sus límites se detallan al final.
 
 ## Evidencia del repositorio
 
@@ -18,7 +18,10 @@ Repositorio revisado: https://github.com/rimelja/keter
 Rama: main.
 Base consultada en la fase 0: 9d0716dda36b65cf4a4b50f8b2367020169acee3.
 Base consultada en la fase 1: 1dc8054251546aa59749fad45cd8eca10d948f0d.
-Commit de index.html en esta fase: 2bd7ebd9894a2e1fcfb5b9582ca8f7c4a82a6839.
+Commit de index.html en la fase 1: 2bd7ebd9894a2e1fcfb5b9582ca8f7c4a82a6839.
+Base consultada en la fase 2: 7c46ea3742dbeac2a055b59819a660a03e2e1217.
+Commit del CSS en la fase 2: 635f6100557aea353a7d97f9c11912a469114c7d.
+Commit del enlace CSS en index.html: 8e32cf793b554ead33894955493f3700f9269659.
 
 En la revisión inicial se encontraron la guía, PROMPT_INICIAL.txt, LEEME_PRIMERO.txt, README.md y la lámina de marca WhatsApp Image 2026-10-27 at 9.00.40 AM.jpeg. No había ESTADO_PROYECTO.md, AGENTS.md ni archivos del sitio en esa rama.
 
@@ -79,7 +82,7 @@ Descriptor de marca: Academia · Cowork · Media Lab.
 | Naranja | #EB7A2C | Acción principal con texto azul marino |
 | Verde azulado | #1E9B8A | Acentos gráficos |
 | Verde | #8CC63F | Acentos y etiquetas con contraste revisado |
-| Azul | #2E75B6 | Acciones secundarias y detalles |
+| Azul | #2E75B6 | Foco de teclado y detalles |
 | Blanco de apoyo | #FFFFFF | Superficies neutrales |
 
 Se usarán los códigos rotulados y se conservarán las proporciones y composición del logo. Los muestrarios tipográficos no identifican de manera inequívoca las familias de fuente; su nombre y disponibilidad quedan pendientes.
@@ -184,7 +187,25 @@ Resultado: fase 0 completada para iniciar la fase 1.
 - [ ] Comprobar en navegador la legibilidad, el encuadre del logo y la navegación por teclado.
 - [ ] Verificar visualmente móvil y escritorio y abrir los enlaces externos.
 
-Resultado: implementación y validación estática completadas. El cierre visual y funcional de esta fase sigue pendiente; la fase 2 todavía no se inicia.
+Resultado de aquella entrega: implementación y validación estática completadas; cierre visual y funcional pendiente. El usuario indicó después «sigue» para continuar con la capa CSS. Esas comprobaciones manuales se conservan como pendientes de la entrega actual.
+
+### Fase 2 Diseño CSS
+
+- [x] Crear assets/css/styles.css y enlazarlo desde index.html.
+- [x] Aplicar los cinco códigos de marca mediante variables CSS y conservar el recurso original del logo.
+- [x] Mantener el texto público, la estructura, los 38 IDs y los 19 enlaces de la fase 1.
+- [x] Incorporar distribución desde móvil, columnas flexibles y navegación visible que permite varias líneas.
+- [x] Definir estados de foco, enlaces con altura mínima y reducción de movimiento.
+- [x] Validar el HTML: cero errores y cero advertencias con html-validate 11.21.0.
+- [x] Validar la sintaxis de CSS y las 374 declaraciones de propiedades con css-tree 3.2.1, sin errores.
+- [x] Calcular el contraste de las combinaciones de texto y estados indicados al final.
+- [x] Comprobar rutas locales, referencias internas y separación de capas; sin JavaScript.
+- [ ] Revisar el renderizado a 320, 375, 768, 1024 y 1440 píxeles y comprobar ausencia de desbordamiento horizontal.
+- [ ] Comprobar el encuadre del logo, el foco y el uso de menú, anclas y preguntas frecuentes con teclado en navegador.
+- [ ] Revisar ampliación al 200 %, lectura, estados de interacción y preferencia de movimiento reducido en navegador.
+- [ ] Inspeccionar la consola y abrir los destinos externos sin enviar mensajes.
+
+Resultado: la implementación CSS y las comprobaciones estáticas están completadas. El cierre visual y funcional de la fase 2 continúa pendiente; no se atribuyen resultados a pruebas de navegador que no se ejecutaron.
 
 ### Fases posteriores
 
@@ -250,17 +271,75 @@ IDs existentes:
 cabecera titulo-logo contenido inicio titulo-inicio nosotros titulo-nosotros programas titulo-programas categoria-tecnologia titulo-tecnologia programa-tecnologia-ia titulo-programa-tecnologia-ia programa-robotica titulo-programa-robotica categoria-comunicacion titulo-comunicacion programa-comunicacion titulo-programa-comunicacion programa-musica titulo-programa-musica categoria-estrategia titulo-estrategia programa-estrategia titulo-programa-estrategia categoria-oficios titulo-oficios programa-artes-culinarias titulo-programa-artes-culinarias programa-belleza titulo-programa-belleza metodologia titulo-metodologia preguntas titulo-preguntas contacto titulo-contacto pie
 ```
 
+## Implementación y verificación de la fase 2
+
+Archivos de esta fase: assets/css/styles.css, index.html y ESTADO_PROYECTO.md.
+El único cambio funcional del HTML es enlazar la hoja de estilos; se actualiza también su comentario de fase. El contenido, los destinos, el logo y la semántica se conservan.
+
+### Decisiones visuales aplicadas
+
+La base combina fondo claro de apoyo #F7F7F2, texto azul marino y superficies blancas. Las acciones principales usan naranja con texto azul marino. Verde azulado, verde y azul aparecen en acentos gráficos y grupos de programas. La sección de metodología usa azul marino con texto claro. Las formas decorativas del inicio se construyen con CSS y no representan instalaciones ni servicios.
+
+La navegación permanece visible en todos los tamaños y puede ocupar varias líneas. Las tarjetas pasan de una a dos columnas, y la metodología de una a tres, mediante consultas de medios. Los puntos de cambio son 30, 45, 52 y 64 rem; a un tamaño raíz de 16 píxeles equivalen a 480, 720, 832 y 1024 píxeles. Esto describe reglas implementadas, no una prueba visual superada.
+
+Se utiliza una pila provisional de fuentes del sistema: Avenir Next, Segoe UI y sans-serif para texto; Trebuchet MS, Avenir Next y sans-serif para títulos. No se afirma que sean las familias oficiales de la marca. No se descargan fuentes externas. Sigue pendiente identificar y aportar las fuentes oficiales para una sustitución posterior.
+
+Los enlaces principales del menú, las tarjetas y el pie declaran una altura mínima de 2.75 rem; los botones de inicio, 3.25 rem; las preguntas, 3.5 rem; los enlaces de contacto, 4 rem. Con una raíz de 16 píxeles corresponden a 44, 52, 56 y 64 píxeles respectivamente. La geometría final debe comprobarse en navegador.
+
+La hoja incorpora foco visible con contorno y separación, enlace para saltar al contenido y reglas para prefers-reduced-motion. Las preguntas conservan details y summary nativos. No se añade JavaScript, formulario ni envío simulado.
+
+### Comprobaciones ejecutadas
+
+| Comprobación | Método | Resultado |
+| --- | --- | --- |
+| HTML después del enlace CSS | html-validate 11.21.0 | 0 errores, 0 advertencias |
+| CSS | Parser y gramática de propiedades de css-tree 3.2.1 | 0 errores de análisis y 0 errores en 374 declaraciones; 21 declaraciones de propiedades personalizadas |
+| Variables y consultas de medios | Resolución auxiliar de valores para el validador e inspección de consultas | Valores y cinco consultas válidos; no es un cálculo de estilos en navegador |
+| Conservación de contenido | Comparación del árbol HTML de ambas fases | Mismo texto del body, IDs y enlaces; solo se añade el enlace a CSS |
+| Recursos | Resolución local de rutas y comparación de la imagen | Hoja y lámina disponibles; imagen idéntica a la fase 1 |
+| Semántica y referencias | Parser HTML | Un main, un H1, siete artículos y tres details; 38 IDs únicos y referencias resueltas |
+| Separación de capas | Inspección del HTML | CSS externo; sin estilos en línea, scripts ni manejadores en línea |
+| Contraste | Cálculo de luminancia relativa de los colores sRGB | Resultados detallados en la tabla siguiente |
+
+Las herramientas de comprobación se ejecutaron fuera del código del sitio. No se añaden dependencias de desarrollo, manifiestos de paquetes ni archivos auxiliares de pruebas al repositorio.
+
+### Contrastes calculados
+
+| Uso | Colores | Relación |
+| --- | --- | --- |
+| Texto principal sobre fondo claro | #1B2A4A / #F7F7F2 | 13.23:1 |
+| Texto secundario sobre fondo claro | #48566B / #F7F7F2 | 6.93:1 |
+| Texto secundario en tarjetas blancas | #48566B / #FFFFFF | 7.45:1 |
+| Acción naranja | #1B2A4A / #EB7A2C | 4.98:1 |
+| Acción naranja al pasar el puntero | #1B2A4A / #F09553 | 6.18:1 |
+| Texto blanco en metodología y estados oscuros | #FFFFFF / #1B2A4A | 14.22:1 |
+| Texto secundario de metodología | #D9E2F0 / #1B2A4A | 10.89:1 |
+| Numeración sobre verde | #1B2A4A / #8CC63F | 6.95:1 |
+| Contorno de foco sobre fondo claro | #2E75B6 / #F7F7F2 | 4.51:1 |
+| Contorno de foco sobre blanco | #2E75B6 / #FFFFFF | 4.84:1 |
+
+Las combinaciones de texto revisadas superan 4.5:1. El cálculo de colores no certifica por sí solo el cumplimiento de accesibilidad de toda la página; quedan pendientes el renderizado, el teclado y las demás comprobaciones del loop.
+
+### Límites y revisión pendiente
+
+Persisten las restricciones de navegador registradas en la fase 1. No se ejecutaron pruebas visuales de esta fase, emulación de anchuras, zoom, teclado ni consola. No se publican capturas ni resultados de rendimiento sin una ejecución real. La adaptación a distintos tamaños está implementada en CSS y su resultado necesita la revisión descrita abajo.
+
+El original del logo sigue siendo una lámina de referencia. Se conserva su encuadre mediante SVG y sus proporciones, pero debe revisarse su nitidez en pantalla. El archivo independiente del logo y las fuentes oficiales siguen pendientes.
+
 ### Cómo abrir y revisar esta entrega
 
 1. Descarga el repositorio desde GitHub mediante Code y Download ZIP.
-2. Extrae los archivos conservando index.html y la imagen original en la misma carpeta.
-3. Abre index.html en Chrome, Edge o Firefox. Esta fase tendrá la apariencia básica del navegador.
+2. Extrae el ZIP completo. Conserva index.html, la imagen original y la carpeta assets con su subcarpeta css.
+3. Abre index.html en Chrome, Edge o Firefox. El diseño se carga desde assets/css/styles.css; no necesitas instalar PHP ni MySQL para esta entrega.
 4. Comprueba que el logo horizontal se ve completo y que cada enlace del menú llega a su sección.
 5. Usa Tab y Enter para probar Saltar al contenido. Abre y cierra las tres preguntas con teclado.
-6. Revisa la legibilidad en una ventana estrecha y otra amplia. Comprueba los destinos de contacto.
+6. Abre las herramientas de desarrollador con F12 o Ctrl+Mayús+I. Activa la barra de dispositivos y revisa anchos de 320, 375, 768, 1024 y 1440 píxeles. Comprueba que no haya desplazamiento horizontal ni texto o botones cortados.
+7. Prueba el zoom al 200 %, revisa el foco de teclado y comprueba que las tres preguntas se pueden abrir y cerrar. Inspecciona la consola y comprueba los destinos de contacto.
+8. Si hace falta un ajuste, registra el ancho, el elemento y el problema concreto; una captura ayuda a ubicarlo. No hace falta enviar ningún mensaje por WhatsApp para revisar el enlace.
 
-No hace falta crear la carpeta ni pegar el código manualmente: index.html ya está en la raíz del repositorio. Si se copia a otra ubicación, debe conservarse junto al archivo de imagen con su nombre exacto y extensión real.
+No hace falta crear archivos ni pegar el código manualmente: el HTML y el CSS ya están en el repositorio. Si se copian a otra ubicación, debe conservarse la estructura de carpetas y el nombre exacto de la imagen. El sitio no se ha desplegado ni tiene una nueva URL pública de alojamiento.
 
 ## Siguiente instrucción
 
-Revisa index.html en un navegador y registra el resultado o los ajustes que hagan falta en esta fase. Cuando la estructura esté validada, continúa con la fase 2 de Loop_Desarrollo_Web_Keter_Do_X.md para crear assets/css/styles.css, aplicar la identidad gráfica y revisar el diseño responsive.
+Revisa el diseño en navegador y registra el resultado o los ajustes concretos que hagan falta. Una vez cerrada la fase 2, continúa con la fase 3 de Loop_Desarrollo_Web_Keter_Do_X.md para incorporar únicamente las mejoras de JavaScript previstas, conservando el contenido y la navegación esenciales.
+
