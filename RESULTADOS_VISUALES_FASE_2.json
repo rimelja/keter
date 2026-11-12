@@ -1,0 +1,1900 @@
+{
+  "sourceBase": "a8699a10725ecdeb5f1516a23634d805675a5bae",
+  "testCommit": "727a384520a5929cf6525e09fbdff91f8993d2db",
+  "generatedAt": "2026-11-12T02:39:03.547Z",
+  "platform": "linux",
+  "playwright": "1.65.0",
+  "sourceBlobs": {
+    "index.html": "d96e69d1a7d95caaeea96e82913c35783dabb5b4",
+    "assets/css/styles.css": "2138f006e886469dc5c1e629ed0324cc20807252",
+    "WhatsApp Image 2026-10-27 at 9.00.40 AM.jpeg": "12ec27fde6668855b4d80038c6eba83db08fbdf1"
+  },
+  "scenarios": [
+    {
+      "name": "pantalla-320",
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "mobileEmulation": true,
+      "metrics": {
+        "width": 320,
+        "innerWidth": 320,
+        "innerHeight": 900,
+        "scrollWidth": 320,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 246,
+            "scroll": 248
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 56.78125,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 94.375,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 103.9375,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 81.546875,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 288,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 288,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 246,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 246,
+            "height": 59.21875
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 246,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 246,
+            "height": 59.21875
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 246,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 246,
+            "height": 59.21875
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 246,
+            "height": 59.21875
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 286,
+            "height": 86.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 286,
+            "height": 86.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 286,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 288,
+            "height": 64
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 288,
+            "height": 64
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 320,
+        "outerWidth": 320,
+        "logo": {
+          "x": 60,
+          "y": 20,
+          "width": 200,
+          "height": 51.421875
+        },
+        "headline": {
+          "x": 16,
+          "y": 298.3125,
+          "width": 288,
+          "height": 149.015625
+        },
+        "programColumns": "288px",
+        "methodColumns": "288px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    },
+    {
+      "name": "pantalla-375",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      },
+      "mobileEmulation": true,
+      "metrics": {
+        "width": 375,
+        "innerWidth": 375,
+        "innerHeight": 900,
+        "scrollWidth": 375,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 301,
+            "scroll": 303
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 56.78125,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 94.375,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 103.9375,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 81.546875,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 343,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 343,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 301,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 341,
+            "height": 86.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 341,
+            "height": 86.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 341,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 343,
+            "height": 64
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 343,
+            "height": 64
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 375,
+        "outerWidth": 375,
+        "logo": {
+          "x": 87.5,
+          "y": 20,
+          "width": 200,
+          "height": 51.421875
+        },
+        "headline": {
+          "x": 16,
+          "y": 303.953125,
+          "width": 343,
+          "height": 149.015625
+        },
+        "programColumns": "343px",
+        "methodColumns": "343px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    },
+    {
+      "name": "pantalla-768",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "mobileEmulation": false,
+      "metrics": {
+        "width": 768,
+        "innerWidth": 768,
+        "innerHeight": 900,
+        "scrollWidth": 768,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 300,
+            "scroll": 302
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 56.78125,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 94.375,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 103.9375,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 81.546875,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 191.125,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 197.84375,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 300.265625,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 300.28125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 300.265625,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 300.28125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 300.265625,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 300.265625,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 300.28125,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 704.546875,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 704.546875,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 704.546875,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 706.546875,
+            "height": 64
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 706.546875,
+            "height": 64
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 768,
+        "outerWidth": 768,
+        "logo": {
+          "x": 283.984375,
+          "y": 20,
+          "width": 200,
+          "height": 51.421875
+        },
+        "headline": {
+          "x": 30.71875,
+          "y": 281,
+          "width": 457.359375,
+          "height": 166.921875
+        },
+        "programColumns": "345.266px 345.281px",
+        "methodColumns": "224.844px 224.859px 224.859px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    },
+    {
+      "name": "pantalla-1024",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "mobileEmulation": false,
+      "metrics": {
+        "width": 1024,
+        "innerWidth": 1024,
+        "innerHeight": 900,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 292,
+            "scroll": 294
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 58.859375,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 98.546875,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 108.625,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 85,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 191.125,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 197.84375,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 291.6875,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 291.703125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 291.6875,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 291.703125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 291.6875,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 291.6875,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 291.703125,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 510.21875,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 510.21875,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 510.21875,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 399.125,
+            "height": 64
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 399.125,
+            "height": 64
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 1024,
+        "outerWidth": 1024,
+        "logo": {
+          "x": 40.953125,
+          "y": 25.59375,
+          "width": 225.265625,
+          "height": 57.921875
+        },
+        "headline": {
+          "x": 40.953125,
+          "y": 242.875,
+          "width": 466.328125,
+          "height": 222.5625
+        },
+        "programColumns": "351.031px 351.047px",
+        "methodColumns": "303.359px 303.359px 303.375px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    },
+    {
+      "name": "pantalla-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobileEmulation": false,
+      "metrics": {
+        "width": 1440,
+        "innerWidth": 1440,
+        "innerHeight": 900,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 58.859375,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 98.546875,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 108.625,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 85,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 191.125,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 197.84375,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 516.375,
+            "height": 65.171875
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 516.375,
+            "height": 65.171875
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 1440,
+        "outerWidth": 1440,
+        "logo": {
+          "x": 120,
+          "y": 25.59375,
+          "width": 256,
+          "height": 65.828125
+        },
+        "headline": {
+          "x": 120,
+          "y": 273.515625,
+          "width": 655.890625,
+          "height": 312.9375
+        },
+        "programColumns": "480px 480px",
+        "methodColumns": "389.328px 389.328px 389.344px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    },
+    {
+      "name": "teclado-375",
+      "skip": {
+        "tag": "A",
+        "id": "",
+        "class": "skip-link",
+        "text": "Saltar al contenido",
+        "href": "#contenido",
+        "outlineWidth": "3px",
+        "outlineStyle": "solid",
+        "focusVisible": true,
+        "visible": true
+      },
+      "order": [
+        {
+          "tag": "A",
+          "id": "",
+          "class": "skip-link",
+          "text": "Saltar al contenido",
+          "href": "#contenido",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "brand",
+          "text": "Keter Do X, inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Programas",
+          "href": "#programas",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Metodología",
+          "href": "#metodologia",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Contacto",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "cta cta--primary",
+          "text": "Explorar programas",
+          "href": "#programas",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "cta cta--secondary",
+          "text": "Solicitar información",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Tecnología e IA",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Robótica Avanzada",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Comunicación",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Música y Producción",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Estrategia",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Artes Culinarias",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Belleza y Estética",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Cómo puedo consultar un programa?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Dónde consulto horarios, requisitos y precios?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Dónde está Keter Do X?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "contact__link contact__link--whatsapp",
+          "text": "WhatsApp: +58 424 234 0915",
+          "href": "https://wa.me/584242340915?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20programas%20de%20Keter%20Do%20X.",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "contact__link contact__link--instagram",
+          "text": "Instagram: @keterdox",
+          "href": "https://www.instagram.com/keterdox/",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "site-footer__back",
+          "text": "Volver al inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        }
+      ],
+      "faqs": 3,
+      "anchors": [
+        {
+          "target": "inicio",
+          "hash": "#inicio",
+          "top": 23.8125,
+          "viewportHeight": 900,
+          "scrollY": 175,
+          "maximumScroll": 4102
+        },
+        {
+          "target": "programas",
+          "hash": "#programas",
+          "top": 47.5,
+          "viewportHeight": 900,
+          "scrollY": 994,
+          "maximumScroll": 4102
+        },
+        {
+          "target": "metodologia",
+          "hash": "#metodologia",
+          "top": 47.671875,
+          "viewportHeight": 900,
+          "scrollY": 3045,
+          "maximumScroll": 4102
+        },
+        {
+          "target": "contacto",
+          "hash": "#contacto",
+          "top": 281.6875,
+          "viewportHeight": 900,
+          "scrollY": 4102,
+          "maximumScroll": 4102
+        }
+      ],
+      "reducedMotion": true
+    },
+    {
+      "name": "teclado-1440",
+      "skip": {
+        "tag": "A",
+        "id": "",
+        "class": "skip-link",
+        "text": "Saltar al contenido",
+        "href": "#contenido",
+        "outlineWidth": "3px",
+        "outlineStyle": "solid",
+        "focusVisible": true,
+        "visible": true
+      },
+      "order": [
+        {
+          "tag": "A",
+          "id": "",
+          "class": "skip-link",
+          "text": "Saltar al contenido",
+          "href": "#contenido",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "brand",
+          "text": "Keter Do X, inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Programas",
+          "href": "#programas",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Metodología",
+          "href": "#metodologia",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "primary-nav__link",
+          "text": "Contacto",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "cta cta--primary",
+          "text": "Explorar programas",
+          "href": "#programas",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "cta cta--secondary",
+          "text": "Solicitar información",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Tecnología e IA",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Robótica Avanzada",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Comunicación",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Música y Producción",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Estrategia",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Artes Culinarias",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "program-card__link",
+          "text": "Consultar sobre Belleza y Estética",
+          "href": "#contacto",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Cómo puedo consultar un programa?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Dónde consulto horarios, requisitos y precios?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "SUMMARY",
+          "id": "",
+          "class": "faq-item__question",
+          "text": "¿Dónde está Keter Do X?",
+          "href": null,
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "contact__link contact__link--whatsapp",
+          "text": "WhatsApp: +58 424 234 0915",
+          "href": "https://wa.me/584242340915?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20programas%20de%20Keter%20Do%20X.",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "contact__link contact__link--instagram",
+          "text": "Instagram: @keterdox",
+          "href": "https://www.instagram.com/keterdox/",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "site-footer__back",
+          "text": "Volver al inicio",
+          "href": "#inicio",
+          "outlineWidth": "3px",
+          "outlineStyle": "solid",
+          "focusVisible": true,
+          "visible": true
+        }
+      ],
+      "faqs": 3,
+      "anchors": [
+        {
+          "target": "inicio",
+          "hash": "#inicio",
+          "top": 24.015625,
+          "viewportHeight": 900,
+          "scrollY": 94,
+          "maximumScroll": 3197
+        },
+        {
+          "target": "programas",
+          "hash": "#programas",
+          "top": 47.515625,
+          "viewportHeight": 900,
+          "scrollY": 1142,
+          "maximumScroll": 3197
+        },
+        {
+          "target": "metodologia",
+          "hash": "#metodologia",
+          "top": 48.484375,
+          "viewportHeight": 900,
+          "scrollY": 2563,
+          "maximumScroll": 3197
+        },
+        {
+          "target": "contacto",
+          "hash": "#contacto",
+          "top": 383.234375,
+          "viewportHeight": 900,
+          "scrollY": 3197,
+          "maximumScroll": 3197
+        }
+      ],
+      "reducedMotion": true
+    },
+    {
+      "name": "movimiento-reducido",
+      "matches": true,
+      "scroll": "auto",
+      "transition": "0s"
+    },
+    {
+      "name": "zoom-200",
+      "method": "chrome.tabs.setZoom/getZoom; viewport sin emulación",
+      "zoom": 2,
+      "before": {
+        "width": 1440,
+        "innerWidth": 1440,
+        "innerHeight": 913,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 414,
+            "scroll": 416
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 58.859375,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 98.546875,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 108.625,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 85,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 191.125,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 197.84375,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 414,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 660.65625,
+            "height": 62.375
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 516.375,
+            "height": 65.171875
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 516.375,
+            "height": 65.171875
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.515625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 1,
+        "visualViewportWidth": 1440,
+        "outerWidth": 1440,
+        "logo": {
+          "x": 120,
+          "y": 25.59375,
+          "width": 256,
+          "height": 65.828125
+        },
+        "headline": {
+          "x": 120,
+          "y": 273.515625,
+          "width": 655.890625,
+          "height": 312.9375
+        },
+        "programColumns": "480px 480px",
+        "methodColumns": "389.328px 389.328px 389.344px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      },
+      "after": {
+        "width": 720,
+        "innerWidth": 720,
+        "innerHeight": 456,
+        "scrollWidth": 720,
+        "overflow": [],
+        "textOverflow": [
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "class": "program-card__link",
+            "client": 281,
+            "scroll": 283
+          }
+        ],
+        "clippedContent": [],
+        "textOutsideViewport": [],
+        "controls": [
+          {
+            "text": "Inicio",
+            "width": 56.7890625,
+            "height": 44
+          },
+          {
+            "text": "Programas",
+            "width": 94.4140625,
+            "height": 44
+          },
+          {
+            "text": "Metodología",
+            "width": 103.96875,
+            "height": 44
+          },
+          {
+            "text": "Contacto",
+            "width": 81.578125,
+            "height": 44
+          },
+          {
+            "text": "Explorar programas",
+            "width": 191.2109375,
+            "height": 52
+          },
+          {
+            "text": "Solicitar información",
+            "width": 197.9375,
+            "height": 52
+          },
+          {
+            "text": "Consultar sobre Tecnología e IA",
+            "width": 280.8828125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Robótica Avanzada",
+            "width": 280.890625,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Comunicación",
+            "width": 280.8828125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Música y Producción",
+            "width": 280.890625,
+            "height": 59.1875
+          },
+          {
+            "text": "Consultar sobre Estrategia",
+            "width": 280.8828125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Artes Culinarias",
+            "width": 280.8828125,
+            "height": 44
+          },
+          {
+            "text": "Consultar sobre Belleza y Estética",
+            "width": 280.890625,
+            "height": 44
+          },
+          {
+            "text": "¿Cómo puedo consultar un programa?",
+            "width": 660.3984375,
+            "height": 62.390625
+          },
+          {
+            "text": "¿Dónde consulto horarios, requisitos y precios?",
+            "width": 660.3984375,
+            "height": 62.390625
+          },
+          {
+            "text": "¿Dónde está Keter Do X?",
+            "width": 660.3984375,
+            "height": 62.390625
+          },
+          {
+            "text": "WhatsApp: +58 424 234 0915",
+            "width": 662.3984375,
+            "height": 64
+          },
+          {
+            "text": "Instagram: @keterdox",
+            "width": 662.3984375,
+            "height": 64
+          },
+          {
+            "text": "Volver al inicio",
+            "width": 100.5625,
+            "height": 44
+          }
+        ],
+        "devicePixelRatio": 2,
+        "visualViewportWidth": 720,
+        "outerWidth": 1440,
+        "logo": {
+          "x": 259.9921875,
+          "y": 20,
+          "width": 200,
+          "height": 51.421875
+        },
+        "headline": {
+          "x": 28.796875,
+          "y": 286.2265625,
+          "width": 428.8515625,
+          "height": 156.46875
+        },
+        "programColumns": "323.195px 323.203px",
+        "methodColumns": "210.133px 210.133px 210.141px",
+        "fontFamily": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+        "title": "Keter Do X | Academia en Caracas"
+      }
+    }
+  ],
+  "consoleErrors": [
+    {
+      "scenario": "zoom-200",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:8765/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageErrors": [],
+  "resourceErrors": [],
+  "httpNotFound": [
+    "/favicon.ico"
+  ],
+  "failures": [
+    {
+      "label": "sin errores de consola",
+      "details": [
+        {
+          "scenario": "zoom-200",
+          "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "location": {
+            "url": "http://127.0.0.1:8765/favicon.ico",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    }
+  ],
+  "browser": "158.0.8127.18"
+}
