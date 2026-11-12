@@ -27,6 +27,7 @@ const report = {
   consoleErrors: [],
   pageErrors: [],
   resourceErrors: [],
+  httpNotFound: [],
   failures: [],
 };
 for (const name of ['index.html', 'assets/css/styles.css', image]) {
@@ -36,6 +37,7 @@ for (const name of ['index.html', 'assets/css/styles.css', image]) {
 const server = http.createServer((request, response) => {
   const target = files[decodeURIComponent(new URL(request.url, base).pathname)];
   if (!target) {
+    report.httpNotFound.push(request.url);
     response.writeHead(404);
     response.end('Not found');
     return;
@@ -48,7 +50,7 @@ function check(ok, label, details) {
 }
 function observe(page, scenario) {
   page.on('pageerror', error => report.pageErrors.push({ scenario, message: error.message }));
-  page.on('console', msg => { if (msg.type() === 'error') report.consoleErrors.push({ scenario, message: msg.text() }); });
+  page.on('console', msg => { if (msg.type() === 'error') report.consoleErrors.push({ scenario, message: msg.text(), location: msg.location() }); });
   page.on('response', response => {
     if (response.status() >= 400) report.resourceErrors.push({ scenario, url: response.url(), status: response.status() });
   });
@@ -67,12 +69,27 @@ async function layout(page) {
     const width = document.documentElement.clientWidth;
     const overflow = [];
     const textOverflow = [];
+    const clippedContent = [];
+    const textOutsideViewport = [];
     for (const el of document.body.querySelectorAll('*')) {
       if (!(el instanceof HTMLElement)) continue;
       const r = el.getBoundingClientRect();
       if (!r.width || !r.height) continue;
       if (r.left < -1 || r.right > width + 1) overflow.push({ tag: el.tagName, id: el.id, class: el.className, left: r.left, right: r.right });
-      if (el.clientWidth && el.scrollWidth > el.clientWidth + 1) textOverflow.push({ tag: el.tagName, id: el.id, class: el.className, client: el.clientWidth, scroll: el.scrollWidth });
+      if (el.clientWidth && el.scrollWidth > el.clientWidth + 1) {
+        const entry = { tag: el.tagName, id: el.id, class: el.className, client: el.clientWidth, scroll: el.scrollWidth };
+        textOverflow.push(entry);
+        if (['hidden', 'clip', 'auto', 'scroll'].includes(getComputedStyle(el).overflowX)) clippedContent.push(entry);
+      }
+    }
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+      if (!node.textContent.trim() || node.parentElement.closest('svg,script,style')) continue;
+      const range = document.createRange();
+      range.selectNodeContents(node);
+      for (const r of range.getClientRects()) {
+        if (r.width && (r.left < -1 || r.right > width + 1)) textOutsideViewport.push({ text: node.textContent.trim(), left: r.left, right: r.right });
+      }
     }
     const controls = [...document.querySelectorAll('.primary-nav__link,.cta,.program-card__link,.faq-item__question,.contact__link,.site-footer__back')].map(el => ({ text: el.textContent.trim(), width: el.getBoundingClientRect().width, height: el.getBoundingClientRect().height }));
     const rect = selector => {
@@ -81,7 +98,8 @@ async function layout(page) {
     };
     return {
       width, innerWidth, innerHeight, scrollWidth: document.documentElement.scrollWidth,
-      overflow, textOverflow, controls,
+      overflow, textOverflow, clippedContent, textOutsideViewport, controls,
+      devicePixelRatio, visualViewportWidth: visualViewport.width, outerWidth,
       logo: rect('.brand__logo'), headline: rect('.hero__title'),
       programColumns: getComputedStyle(document.querySelector('.program-grid')).gridTemplateColumns,
       methodColumns: getComputedStyle(document.querySelector('.method__steps')).gridTemplateColumns,
@@ -93,7 +111,7 @@ async function layout(page) {
 function checkLayout(metrics, name) {
   check(metrics.scrollWidth <= metrics.width + 1, name + ': sin desplazamiento horizontal', metrics);
   check(metrics.overflow.length === 0, name + ': elementos dentro de la anchura', metrics.overflow);
-  check(metrics.textOverflow.length === 0, name + ': contenido sin recorte horizontal', metrics.textOverflow);
+  check(metrics.clippedContent.length === 0 && metrics.textOutsideViewport.length === 0, name + ': contenido sin recorte horizontal', { clipped: metrics.clippedContent, textOutsideViewport: metrics.textOutsideViewport });
   check(metrics.controls.every(c => c.height >= 43.9), name + ': controles principales de al menos 44px', metrics.controls.filter(c => c.height < 43.9));
   check(Math.abs(metrics.logo.width / metrics.logo.height - 310 / 80) < 0.02, name + ': proporción del logo', metrics.logo);
 }
@@ -151,8 +169,8 @@ async function keyboard(browser, width) {
   const anchors = [];
   for (const target of ['inicio', 'programas', 'metodologia', 'contacto']) {
     await navigation.locator('.primary-nav__link[href="#' + target + '"]').press('Enter');
-    const result = await navigation.evaluate(id => ({ hash: location.hash, top: document.getElementById(id).getBoundingClientRect().top }), target);
-    check(result.hash === '#' + target && result.top >= 0 && result.top < 100, name + ': enlace de menú ' + target, result);
+    const result = await navigation.evaluate(id => ({ hash: location.hash, top: document.getElementById(id).getBoundingClientRect().top, viewportHeight: innerHeight, scrollY, maximumScroll: document.documentElement.scrollHeight - innerHeight }), target);
+    check(result.hash === '#' + target && result.top >= 0 && result.top < result.viewportHeight && (result.top < 100 || result.scrollY >= result.maximumScroll - 1), name + ': enlace de menú ' + target, result);
     anchors.push({ target, ...result });
   }
   report.scenarios.push({ name, skip, order, faqs, anchors, reducedMotion: true });
@@ -220,8 +238,18 @@ async function keyboard(browser, width) {
     const after = await layout(zoomPage);
     check(zoom === 2 && Math.abs(after.innerWidth * 2 - before.innerWidth) <= 2, 'zoom real del navegador al 200 %', { zoom, before: before.innerWidth, after: after.innerWidth });
     checkLayout(after, 'zoom-200');
-    await shot(zoomPage, 'zoom-200');
-    await shot(zoomPage, 'zoom-200-completa', true);
+    // Native viewport capture avoids Playwright's CSS clip being cropped at browser zoom > 100%.
+    const nativeCapture = await zoomContext.newCDPSession(zoomPage);
+    async function zoomShot(name) {
+      const result = await nativeCapture.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false });
+      fs.writeFileSync(path.join(out, name + '.png'), Buffer.from(result.data, 'base64'));
+    }
+    await zoomShot('zoom-200');
+    await zoomPage.emulateMedia({ reducedMotion: 'reduce' });
+    for (const section of ['programas', 'metodologia', 'preguntas', 'contacto']) {
+      await zoomPage.locator('#' + section).scrollIntoViewIfNeeded();
+      await zoomShot('zoom-200-' + section);
+    }
     report.scenarios.push({ name: 'zoom-200', method: 'chrome.tabs.setZoom/getZoom; viewport sin emulación', zoom, before, after });
     await zoomContext.close();
     zoomContext = undefined;
