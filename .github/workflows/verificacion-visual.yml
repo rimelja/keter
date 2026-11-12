@@ -1,0 +1,35 @@
+name: Verificación visual de la fase 2
+on:
+  push:
+    branches: ["qa/fase2-20261112"]
+    paths:
+      - "tests/browser-qa.cjs"
+      - ".github/workflows/verificacion-visual.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  navegador:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Obtener la versión bajo prueba
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Instalar herramienta de prueba
+        run: npm install --prefix .qa-runtime --no-audit --no-fund --ignore-scripts playwright@1.65.0
+      - name: Preparar Chromium
+        run: node .qa-runtime/node_modules/playwright/cli.js install --with-deps chromium
+      - name: Probar pantallas, teclado y zoom
+        env:
+          QA_SOURCE_BASE: a8699a10725ecdeb5f1516a23634d805675a5bae
+        run: node tests/browser-qa.cjs
+      - name: Conservar capturas y resultados
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: keter-fase2-evidencia-visual
+          path: qa-evidence/
+          retention-days: 3
+          if-no-files-found: warn
