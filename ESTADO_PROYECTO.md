@@ -1,10 +1,10 @@
 # Estado del proyecto Keter Do X
 
 Fecha de revisión: 12 de noviembre de 2026, UTC.
-Versión del registro: 0.3.
+Versión del registro: 0.4.
 Guía aplicada: Loop_Desarrollo_Web_Keter_Do_X.md, versión 1.1.
-Estado: fase 2 implementada y validada estáticamente; revisión visual, de ampliación y por teclado pendiente.
-Siguiente paso: abrir la página con sus estilos y comprobar el diseño en móvil y escritorio para cerrar la fase 2.
+Estado: fase 2 verificada visualmente en Chromium, con móvil emulado, escritorio, zoom al 200 % y teclado. Quedan un 404 de favicon y una mejora de saltos de línea.
+Siguiente paso: corregir el favicon y afinar los saltos del nombre de marca; repetir la verificación antes de aprobar toda la fase 2.
 
 ## Objetivo y alcance
 
@@ -22,6 +22,9 @@ Commit de index.html en la fase 1: 2bd7ebd9894a2e1fcfb5b9582ca8f7c4a82a6839.
 Base consultada en la fase 2: 7c46ea3742dbeac2a055b59819a660a03e2e1217.
 Commit del CSS en la fase 2: 635f6100557aea353a7d97f9c11912a469114c7d.
 Commit del enlace CSS en index.html: 8e32cf793b554ead33894955493f3700f9269659.
+Versión de la página sometida a pruebas visuales: a8699a10725ecdeb5f1516a23634d805675a5bae.
+Rama aislada de pruebas: qa/fase2-20261112; commit final de pruebas 727a384520a5929cf6525e09fbdff91f8993d2db.
+Ejecución: https://github.com/rimelja/keter/actions/runs/43142818407
 
 En la revisión inicial se encontraron la guía, PROMPT_INICIAL.txt, LEEME_PRIMERO.txt, README.md y la lámina de marca WhatsApp Image 2026-10-27 at 9.00.40 AM.jpeg. No había ESTADO_PROYECTO.md, AGENTS.md ni archivos del sitio en esa rama.
 
@@ -184,8 +187,9 @@ Resultado: fase 0 completada para iniciar la fase 1.
 - [x] Mantener los contenidos comerciales pendientes fuera del texto público.
 - [x] Superar html-validate 11.21.0: cero errores y cero advertencias.
 - [x] Comprobar la ausencia de CSS, JavaScript, formularios y manejadores en línea.
-- [ ] Comprobar en navegador la legibilidad, el encuadre del logo y la navegación por teclado.
-- [ ] Verificar visualmente móvil y escritorio y abrir los enlaces externos.
+- [x] Comprobar en Chromium la legibilidad, el encuadre del logo y la navegación por teclado, en la revisión del 12 de noviembre.
+- [x] Verificar visualmente móvil emulado y escritorio en esa revisión.
+- [ ] Abrir los destinos externos de contacto y comprobar su atención antes del lanzamiento.
 
 Resultado de aquella entrega: implementación y validación estática completadas; cierre visual y funcional pendiente. El usuario indicó después «sigue» para continuar con la capa CSS. Esas comprobaciones manuales se conservan como pendientes de la entrega actual.
 
@@ -200,12 +204,15 @@ Resultado de aquella entrega: implementación y validación estática completada
 - [x] Validar la sintaxis de CSS y las 374 declaraciones de propiedades con css-tree 3.2.1, sin errores.
 - [x] Calcular el contraste de las combinaciones de texto y estados indicados al final.
 - [x] Comprobar rutas locales, referencias internas y separación de capas; sin JavaScript.
-- [ ] Revisar el renderizado a 320, 375, 768, 1024 y 1440 píxeles y comprobar ausencia de desbordamiento horizontal.
-- [ ] Comprobar el encuadre del logo, el foco y el uso de menú, anclas y preguntas frecuentes con teclado en navegador.
-- [ ] Revisar ampliación al 200 %, lectura, estados de interacción y preferencia de movimiento reducido en navegador.
-- [ ] Inspeccionar la consola y abrir los destinos externos sin enviar mensajes.
+- [x] Revisar el renderizado a 320, 375, 768, 1024 y 1440 píxeles; sin desbordamiento horizontal ni texto recortado.
+- [x] Comprobar el encuadre del logo, el foco y el uso de menú, anclas y preguntas frecuentes con teclado en Chromium.
+- [x] Revisar zoom real al 200 %, lectura y preferencia de movimiento reducido; probar preguntas con toque, Enter y Espacio.
+- [x] Inspeccionar la consola: cero excepciones de página y un error 404 de /favicon.ico.
+- [ ] Corregir el favicon y repetir el criterio de consola sin errores.
+- [ ] Afinar los saltos de línea para conservar la continuidad del nombre Keter Do X.
+- [ ] Comprobar los destinos externos de contacto antes del lanzamiento.
 
-Resultado: la implementación CSS y las comprobaciones estáticas están completadas. El cierre visual y funcional de la fase 2 continúa pendiente; no se atribuyen resultados a pruebas de navegador que no se ejecutaron.
+Resultado actualizado: la revisión visual y funcional solicitada se completó en Chromium con evidencia. La ejecución automática termina en failure por el 404 de favicon; no se marca toda la fase como aprobada. Se registra además una mejora tipográfica menor.
 
 ### Fases posteriores
 
@@ -322,9 +329,9 @@ Las combinaciones de texto revisadas superan 4.5:1. El cálculo de colores no ce
 
 ### Límites y revisión pendiente
 
-Persisten las restricciones de navegador registradas en la fase 1. No se ejecutaron pruebas visuales de esta fase, emulación de anchuras, zoom, teclado ni consola. No se publican capturas ni resultados de rendimiento sin una ejecución real. La adaptación a distintos tamaños está implementada en CSS y su resultado necesita la revisión descrita abajo.
+En la entrega 0.3 estas pruebas permanecían pendientes por las restricciones del entorno. En la revisión del 12 de noviembre el navegador compartido tampoco alcanzó la vista previa local. Se ejecutó entonces una prueba independiente en GitHub Actions sobre los archivos públicos del repositorio, en una rama de pruebas y sin modificar la página. Los resultados actuales y sus límites se detallan en la sección siguiente y en PRUEBAS_VISUALES_FASE_2.md.
 
-El original del logo sigue siendo una lámina de referencia. Se conserva su encuadre mediante SVG y sus proporciones, pero debe revisarse su nitidez en pantalla. El archivo independiente del logo y las fuentes oficiales siguen pendientes.
+El original del logo sigue siendo una lámina de referencia. Las capturas actuales muestran el logo completo, con sus proporciones y sin deformación apreciable. El archivo independiente y las fuentes oficiales siguen pendientes para optimización final.
 
 ### Cómo abrir y revisar esta entrega
 
@@ -339,7 +346,34 @@ El original del logo sigue siendo una lámina de referencia. Se conserva su encu
 
 No hace falta crear archivos ni pegar el código manualmente: el HTML y el CSS ya están en el repositorio. Si se copian a otra ubicación, debe conservarse la estructura de carpetas y el nombre exacto de la imagen. El sitio no se ha desplegado ni tiene una nueva URL pública de alojamiento.
 
+## Revisión visual y funcional ejecutada el 12 de noviembre
+
+La página se probó con Chromium 158.0.8127.18 y Playwright 1.65.0 sobre Linux, mediante GitHub Actions. Se ejecutaron nueve escenarios y se generaron 19 capturas PNG. Se conservaron los hashes del HTML, CSS e imagen para comprobar que la prueba corresponde a la versión de main anterior a esta documentación.
+
+| Escenario | Resultado |
+| --- | --- |
+| 320 y 375 píxeles, móvil emulado | Sin desplazamiento horizontal ni texto fuera del ancho; tarjetas en una columna; preguntas probadas con toque |
+| 768, 1024 y 1440 píxeles | Sin desplazamiento horizontal ni texto recortado; columnas y cabecera cambian según el CSS |
+| Zoom real al 200 % | Factor 2 verificado; ancho útil de 1440 a 720 píxeles CSS; sin pérdida de contenido por recorte horizontal |
+| Teclado a 375 y 1440 píxeles | 21 paradas de foco visibles; Tab y Shift+Tab, salto al main, menú por Enter y tres preguntas con Enter/Espacio |
+| Movimiento reducido | Preferencia reconocida, desplazamiento automático y transiciones desactivadas |
+| Controles principales seleccionados | Altura mínima real de 44 píxeles CSS |
+| Consola y recursos | Cero excepciones JavaScript; un 404 de /favicon.ico |
+
+Hallazgo funcional menor: no se ha definido el icono de pestaña y Chromium solicita /favicon.ico. Ese 404 impide superar el criterio de consola sin errores. No afecta al uso de menú, preguntas o contacto.
+
+Observación visual menor: la X final de Keter Do X puede quedar sola en el encabezado a 768 píxeles y al 200 %; el rótulo de presentación también divide el nombre. Conviene mantener Do X unido y ajustar la anchura del rótulo. No se modificaron el HTML ni el CSS durante esta revisión.
+
+Evidencia persistida en el repositorio:
+
+- PRUEBAS_VISUALES_FASE_2.md: alcance, resultados, reproducción de hallazgos y límites.
+- RESULTADOS_VISUALES_FASE_2.json: métricas y resultados detallados de la ejecución final.
+- Rama qa/fase2-20261112: script y flujo reproducible; no se fusiona su configuración con main.
+- Ejecución https://github.com/rimelja/keter/actions/runs/43142818407: artefacto keter-fase2-evidencia-visual con capturas, disponible hasta el 15 de noviembre de 2026.
+
+El resultado global de esa ejecución es failure exclusivamente por el favicon. Las mediciones de pantalla, zoom, teclado, toque y movimiento reducido pasan. Se revisaron las capturas de esos estados. Las pruebas de móvil son emulación en Chromium; no prueban Safari/iOS, Firefox, dispositivos físicos ni las fuentes propias de Windows. No se abrió WhatsApp o Instagram ni se enviaron mensajes.
+
 ## Siguiente instrucción
 
-Revisa el diseño en navegador y registra el resultado o los ajustes concretos que hagan falta. Una vez cerrada la fase 2, continúa con la fase 3 de Loop_Desarrollo_Web_Keter_Do_X.md para incorporar únicamente las mejoras de JavaScript previstas, conservando el contenido y la navegación esenciales.
+Corregir el favicon y los saltos del nombre de marca. Repetir la verificación tras esos cambios. Después de resolver los hallazgos, continuar con la fase 3 de Loop_Desarrollo_Web_Keter_Do_X.md, conservando el contenido y la navegación esenciales.
 
